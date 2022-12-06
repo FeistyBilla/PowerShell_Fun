@@ -1,8 +1,8 @@
 #Import Customer Data
-$customer = Import-Csv -Path 'C:\users\wsout\OneDrive\Scripts\WinterFiles\cust.csv'
+$customer = Import-Csv -Path 'cust.csv'
 $customer_n = ($customer).count
 #Import Wine Options
-$wine = Import-Csv -Path 'C:\Users\wsout\OneDrive\Scripts\WinterFiles\wines.csv'
+$wine = Import-Csv -Path 'wines.csv'
 $wine_n = ($wine).count
 #Fake Record Generation
 (146752..200999) | ForEach-Object {
