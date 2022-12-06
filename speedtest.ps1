@@ -5,8 +5,8 @@
 #################################################################
 ### MODIFY THE PATHS TO SPEEDTEST.EXE AND OUTPUT FILE HERE!!! ###
 #################################################################
-[string]$output_path = 'D:\OneDrive\Scripts\Speedtest\Output\speedtest.csv'
-$results = & D:\OneDrive\Scripts\Speedtest\Ookla\speedtest.exe -f csv -v
+[string]$output_path = '.\Output\speedtest.csv'
+$results = & .\speedtest.exe -f csv -v
 #################################################################
 
 $array = $results.Split('"') | Where-Object {$_ -ne ','}
